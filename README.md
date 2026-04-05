@@ -16,12 +16,7 @@
 
 
 ## 🛠 주요 기능 (Features)
-- **Environment**: Gymnasium 기반의 커스텀 UAV 탐색 환경(`rssi_env.py`)
-- **Model**: PyTorch 기반 PPO 모델을 통한 지능형 에이전트 학습
-- **Visualization**: 학습 결과 및 에이전트의 이동 경로를 2D/3D 그래프로 시각화
-- **Filter**: 위치 추정 정확도 향상을 위한 칼만 필터 모듈 포함
-
-## 🚀 시작하기 (Getting Started)
+- **성능 비교** : 랜덤으로 생성된 데이터로 학습한 ANN과 실제 산에서 측정한 데이터셋으로 학습한 ANN과의 성능 비교
 
 ### 환경 설정
 ```bash
@@ -29,9 +24,9 @@ pip install gymnasium torch numpy matplotlib pandas
 ```
 
 ### 실행 방법
-1. 상단의 링크에서 데이터셋을 다운로드합니다.
-2. `train.py`를 실행하여 학습을 시작하거나, 기존 학습된 모델로 시뮬레이션을 구동합니다.
-```bash
+1. 상단의 링크에서 데이터셋을 다운로드합니다. 같은 폴더 안에 넣습니다.
+2. ann_trian.py와 ann_train_dataset ver를 학습 시킵니다.
+3. compare_ann_models.py로 성능을 비교해 봅니다.
 python train.py
 ```
 
